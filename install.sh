@@ -1,3 +1,4 @@
+#!/bin/sh
 sudo apt install apache2
 sudo ufw allow in "Apache Full"
 sudo service apache2 status
@@ -8,7 +9,7 @@ sudo mkdir -p /var/www/prestashop/
 sudo chown -R $USER:$USER /var/www/prestashop
 sudo chmod -R 755 /var/www/prestashop
 > /etc/apache2/sites-available/prestashop.conf
-cat <<+>> /etc/apache2/sites-available/prestashop.conf
+cat <<+ >> /etc/apache2/sites-available/prestashop.conf
 <VirtualHost *:80>
  ServerAdmin admin@esempio.com
  ServerName esempio.com
