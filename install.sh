@@ -23,6 +23,7 @@ sudo a2ensite prestashop.conf
 sudo apache2ctl configtest
 sudo systemctl restart apache2
 sudo apt install mysql-server
+sudo mysql_secure_installation
 sudo apt install php libapache2-mod-php php-mysql php-curl php-gd php-mbstring php-xml php-xmlrpc php-soap php-intl php-zip
 sudo service apache2 restart
 cd /var/www/prestashop
